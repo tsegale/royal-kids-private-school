@@ -1,5 +1,5 @@
 <svg viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg">
-  <rect width="700" height="440" fill="#e7ede7"/>
+  <rect width="700" height="440" fill="#F5ECED"/>
   <!-- main roads -->
   <rect x="0" y="190" width="700" height="26" fill="#ffffff" stroke="#d8d3c2" stroke-width="1.5"/>
   <rect x="320" y="0" width="26" height="440" fill="#ffffff" stroke="#d8d3c2" stroke-width="1.5"/>
@@ -19,11 +19,11 @@
   </g>
   <!-- park patch -->
   <circle cx="240" cy="370" r="40" fill="#cfe0c8"/>
-  <circle cx="220" cy="385" r="14" fill="#1f4734" opacity="0.5"/>
-  <circle cx="260" cy="380" r="11" fill="#1f4734" opacity="0.5"/>
+  <circle cx="220" cy="385" r="14" fill="#861C2A" opacity="0.5"/>
+  <circle cx="260" cy="380" r="11" fill="#861C2A" opacity="0.5"/>
   <!-- school location marker -->
   <g transform="translate(370 230)">
-    <path d="M0 0 C-20 -22 -20 -50 0 -58 C20 -50 20 -22 0 0 Z" fill="#5c2230" stroke="#1b231d" stroke-width="2"/>
+    <path d="M0 0 C-20 -22 -20 -50 0 -58 C20 -50 20 -22 0 0 Z" fill="#3A0B14" stroke="#1b231d" stroke-width="2"/>
     <circle cx="0" cy="-40" r="12" fill="#f1f0e7"/>
   </g>
   <text x="370" y="-72" transform="translate(0,0)" fill="none"></text>

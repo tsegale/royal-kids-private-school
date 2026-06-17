@@ -1,9 +1,9 @@
 <svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg">
   <rect width="700" height="460" fill="#f1f0e7"/>
-  <rect width="700" height="280" fill="#e7ede7"/>
+  <rect width="700" height="280" fill="#F5ECED"/>
   <!-- stage/podium backdrop -->
-  <rect x="250" y="60" width="200" height="140" fill="#1f4734" stroke="#1b231d" stroke-width="2"/>
-  <rect x="250" y="60" width="200" height="140" fill="none" stroke="#b08d3f" stroke-width="3"/>
+  <rect x="250" y="60" width="200" height="140" fill="#861C2A" stroke="#1b231d" stroke-width="2"/>
+  <rect x="250" y="60" width="200" height="140" fill="none" stroke="#CA943E" stroke-width="3"/>
   <!-- crest on the backdrop -->
   <g transform="translate(350 130) scale(0.55)">
     <path d="M0 -52 L44 -38 V0 C44 30 24 46 0 56 C-24 46 -44 30 -44 0 V-38 Z" fill="#f1f0e7" opacity="0.9"/>
@@ -11,27 +11,27 @@
   <!-- rows of seated children, simple repeating figures -->
   <g>
     <!-- row 1 -->
-    <g fill="#5c2230"><circle cx="80" cy="300" r="13"/><rect x="64" y="313" width="32" height="40" rx="7"/></g>
-    <g fill="#1f4734"><circle cx="140" cy="300" r="13"/><rect x="124" y="313" width="32" height="40" rx="7"/></g>
-    <g fill="#7a3242"><circle cx="200" cy="300" r="13"/><rect x="184" y="313" width="32" height="40" rx="7"/></g>
-    <g fill="#b08d3f"><circle cx="500" cy="300" r="13"/><rect x="484" y="313" width="32" height="40" rx="7"/></g>
-    <g fill="#1f4734"><circle cx="560" cy="300" r="13"/><rect x="544" y="313" width="32" height="40" rx="7"/></g>
-    <g fill="#5c2230"><circle cx="620" cy="300" r="13"/><rect x="604" y="313" width="32" height="40" rx="7"/></g>
+    <g fill="#3A0B14"><circle cx="80" cy="300" r="13"/><rect x="64" y="313" width="32" height="40" rx="7"/></g>
+    <g fill="#861C2A"><circle cx="140" cy="300" r="13"/><rect x="124" y="313" width="32" height="40" rx="7"/></g>
+    <g fill="#521220"><circle cx="200" cy="300" r="13"/><rect x="184" y="313" width="32" height="40" rx="7"/></g>
+    <g fill="#CA943E"><circle cx="500" cy="300" r="13"/><rect x="484" y="313" width="32" height="40" rx="7"/></g>
+    <g fill="#861C2A"><circle cx="560" cy="300" r="13"/><rect x="544" y="313" width="32" height="40" rx="7"/></g>
+    <g fill="#3A0B14"><circle cx="620" cy="300" r="13"/><rect x="604" y="313" width="32" height="40" rx="7"/></g>
   </g>
   <g>
     <!-- row 2, slightly larger, closer -->
-    <g fill="#2a5942"><circle cx="60" cy="365" r="16"/><rect x="40" y="381" width="40" height="48" rx="8"/></g>
-    <g fill="#7a3242"><circle cx="135" cy="365" r="16"/><rect x="115" y="381" width="40" height="48" rx="8"/></g>
-    <g fill="#1f4734"><circle cx="210" cy="365" r="16"/><rect x="190" y="381" width="40" height="48" rx="8"/></g>
-    <g fill="#b08d3f"><circle cx="285" cy="365" r="16"/><rect x="265" y="381" width="40" height="48" rx="8"/></g>
-    <g fill="#5c2230"><circle cx="420" cy="365" r="16"/><rect x="400" y="381" width="40" height="48" rx="8"/></g>
-    <g fill="#1f4734"><circle cx="495" cy="365" r="16"/><rect x="475" y="381" width="40" height="48" rx="8"/></g>
-    <g fill="#2a5942"><circle cx="570" cy="365" r="16"/><rect x="550" y="381" width="40" height="48" rx="8"/></g>
-    <g fill="#7a3242"><circle cx="640" cy="365" r="16"/><rect x="620" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#9E2333"><circle cx="60" cy="365" r="16"/><rect x="40" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#521220"><circle cx="135" cy="365" r="16"/><rect x="115" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#861C2A"><circle cx="210" cy="365" r="16"/><rect x="190" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#CA943E"><circle cx="285" cy="365" r="16"/><rect x="265" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#3A0B14"><circle cx="420" cy="365" r="16"/><rect x="400" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#861C2A"><circle cx="495" cy="365" r="16"/><rect x="475" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#9E2333"><circle cx="570" cy="365" r="16"/><rect x="550" y="381" width="40" height="48" rx="8"/></g>
+    <g fill="#521220"><circle cx="640" cy="365" r="16"/><rect x="620" y="381" width="40" height="48" rx="8"/></g>
   </g>
   <!-- flags either side of stage -->
   <line x1="240" y1="200" x2="240" y2="90" stroke="#1b231d" stroke-width="2.4"/>
-  <path d="M240 92 L274 100 L240 108 Z" fill="#b08d3f"/>
+  <path d="M240 92 L274 100 L240 108 Z" fill="#CA943E"/>
   <line x1="460" y1="200" x2="460" y2="90" stroke="#1b231d" stroke-width="2.4"/>
-  <path d="M460 92 L426 100 L460 108 Z" fill="#5c2230"/>
+  <path d="M460 92 L426 100 L460 108 Z" fill="#3A0B14"/>
 </svg>

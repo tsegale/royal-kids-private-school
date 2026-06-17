@@ -1,24 +1,24 @@
 /* ============================================================
    ROYAL KIDS PRIVATE SCHOOL — DESIGN TOKENS
-   A traditional, editorial school identity: forest green,
-   antique brass, deep maroon accent, warm paper ground.
+   A traditional, editorial school identity: maroon and gold,
+   warm paper ground.
    No gradients. No drop-shadows-as-decoration. Hairline rules
    throughout, in the spirit of a certificate or report card.
    ============================================================ */
 
 :root {
   /* ---- Color: brand ---- */
-  --forest-900: #122821;   /* deepest green, nav/footer ground */
-  --forest-700: #1f4734;   /* primary brand green */
-  --forest-600: #2a5942;   /* lighter step, hovers */
-  --forest-100: #e7ede7;   /* pale green wash for sections */
+  --forest-900: #3D0D14;   /* deepest maroon, nav/footer ground */
+  --forest-700: #861C2A;   /* primary brand maroon */
+  --forest-600: #9E2333;   /* lighter step, hovers */
+  --forest-100: #F5ECED;   /* pale maroon wash for sections */
 
-  --brass-700:  #8d6b2c;   /* deep brass, text-on-paper accent */
-  --brass-500:  #b08d3f;   /* primary brass accent */
-  --brass-200:  #e7d8b3;   /* pale brass wash */
+  --brass-700:  #7A5210;   /* deep gold, text-on-paper accent */
+  --brass-500:  #CA943E;   /* primary gold accent */
+  --brass-200:  #EDD9A0;   /* pale gold wash */
 
-  --maroon-700: #5c2230;   /* deep maroon, rare use */
-  --maroon-500: #7a3242;
+  --maroon-700: #3A0B14;   /* deep secondary, distinct from primary */
+  --maroon-500: #521220;
 
   /* ---- Color: neutrals ---- */
   --paper:      #f1f0e7;   /* warm sage-tinted paper, page ground */
@@ -38,7 +38,7 @@
   --radius-md: 3px;
 
   /* ---- Shadow: used only for true elevation, never decoration ---- */
-  --shadow-card: 0 1px 2px rgba(18, 40, 33, 0.06), 0 6px 16px rgba(18, 40, 33, 0.07);
+  --shadow-card: 0 1px 2px rgba(61, 13, 20, 0.06), 0 6px 16px rgba(61, 13, 20, 0.07);
 
   /* ---- Layout ---- */
   --container: 1180px;
