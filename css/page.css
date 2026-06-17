@@ -74,6 +74,11 @@
 .breadcrumb a { color: rgba(241, 240, 231, 0.8); }
 .breadcrumb a:hover { color: var(--brass-200); }
 
+/* ---- Section spacing ---- */
+.section { padding: 92px 0; }
+.section--tight { padding: 72px 0; }
+.section--alt { background: var(--forest-100); }
+
 /* ---- Two column content + sidebar pattern ---- */
 .page-body {
   display: grid;
