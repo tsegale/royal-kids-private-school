@@ -1,0 +1,30 @@
+<svg viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="440" fill="#e7ede7"/>
+  <!-- main roads -->
+  <rect x="0" y="190" width="700" height="26" fill="#ffffff" stroke="#d8d3c2" stroke-width="1.5"/>
+  <rect x="320" y="0" width="26" height="440" fill="#ffffff" stroke="#d8d3c2" stroke-width="1.5"/>
+  <rect x="0" y="320" width="700" height="16" fill="#ffffff" stroke="#d8d3c2" stroke-width="1.2"/>
+  <!-- city blocks -->
+  <g fill="#dcd6c2" stroke="#c9c3ad" stroke-width="1">
+    <rect x="40" y="40" width="120" height="100"/>
+    <rect x="200" y="40" width="90" height="120"/>
+    <rect x="400" y="40" width="140" height="100"/>
+    <rect x="580" y="50" width="90" height="110"/>
+    <rect x="40" y="240" width="100" height="60"/>
+    <rect x="180" y="250" width="110" height="50"/>
+    <rect x="400" y="240" width="120" height="60"/>
+    <rect x="560" y="230" width="110" height="70"/>
+    <rect x="40" y="350" width="110" height="60"/>
+    <rect x="420" y="350" width="130" height="60"/>
+  </g>
+  <!-- park patch -->
+  <circle cx="240" cy="370" r="40" fill="#cfe0c8"/>
+  <circle cx="220" cy="385" r="14" fill="#1f4734" opacity="0.5"/>
+  <circle cx="260" cy="380" r="11" fill="#1f4734" opacity="0.5"/>
+  <!-- school location marker -->
+  <g transform="translate(370 230)">
+    <path d="M0 0 C-20 -22 -20 -50 0 -58 C20 -50 20 -22 0 0 Z" fill="#5c2230" stroke="#1b231d" stroke-width="2"/>
+    <circle cx="0" cy="-40" r="12" fill="#f1f0e7"/>
+  </g>
+  <text x="370" y="-72" transform="translate(0,0)" fill="none"></text>
+</svg>

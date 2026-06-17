@@ -1,0 +1,196 @@
+/* ============================================================
+   ROYAL KIDS PRIVATE SCHOOL — DESIGN TOKENS
+   A traditional, editorial school identity: forest green,
+   antique brass, deep maroon accent, warm paper ground.
+   No gradients. No drop-shadows-as-decoration. Hairline rules
+   throughout, in the spirit of a certificate or report card.
+   ============================================================ */
+
+:root {
+  /* ---- Color: brand ---- */
+  --forest-900: #122821;   /* deepest green, nav/footer ground */
+  --forest-700: #1f4734;   /* primary brand green */
+  --forest-600: #2a5942;   /* lighter step, hovers */
+  --forest-100: #e7ede7;   /* pale green wash for sections */
+
+  --brass-700:  #8d6b2c;   /* deep brass, text-on-paper accent */
+  --brass-500:  #b08d3f;   /* primary brass accent */
+  --brass-200:  #e7d8b3;   /* pale brass wash */
+
+  --maroon-700: #5c2230;   /* deep maroon, rare use */
+  --maroon-500: #7a3242;
+
+  /* ---- Color: neutrals ---- */
+  --paper:      #f1f0e7;   /* warm sage-tinted paper, page ground */
+  --paper-raised: #ffffff; /* cards/panels above paper */
+  --ink-900:    #1b231d;   /* near-black, warm green-cast, body text */
+  --ink-700:    #3c463e;   /* secondary text */
+  --ink-500:    #6b746a;   /* tertiary / muted text */
+  --line:       #d8d3c2;   /* hairline borders on paper */
+  --line-deep:  #aba78f;   /* slightly stronger hairline */
+
+  /* ---- Type ---- */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+
+  /* ---- Scale ---- */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+
+  /* ---- Shadow: used only for true elevation, never decoration ---- */
+  --shadow-card: 0 1px 2px rgba(18, 40, 33, 0.06), 0 6px 16px rgba(18, 40, 33, 0.07);
+
+  /* ---- Layout ---- */
+  --container: 1180px;
+  --container-narrow: 760px;
+  --gutter: clamp(20px, 5vw, 64px);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink-900);
+  font-size: 16.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+  color: var(--forest-900);
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+ul { margin: 0; padding: 0; }
+
+button { font-family: inherit; cursor: pointer; }
+
+:focus-visible {
+  outline: 2px solid var(--brass-700);
+  outline-offset: 3px;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+/* ---- Eyebrow label: used only where it encodes a real category ---- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-700);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: var(--brass-700);
+  display: inline-block;
+}
+
+/* ---- Double rule: the recurring section-divider signature ---- */
+.ledger-rule {
+  height: 9px;
+  border-top: 1px solid var(--line-deep);
+  border-bottom: 1px solid var(--line-deep);
+}
+
+.ledger-rule--brass {
+  border-color: var(--brass-500);
+  opacity: 0.6;
+}
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14.5px;
+  letter-spacing: 0.02em;
+  padding: 13px 26px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--forest-700);
+  color: var(--paper);
+  border-color: var(--forest-700);
+}
+.btn-primary:hover { background: var(--forest-600); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--forest-900);
+  border-color: var(--ink-900);
+}
+.btn-outline:hover {
+  background: var(--forest-900);
+  color: var(--paper);
+  border-color: var(--forest-900);
+}
+
+.btn-on-dark {
+  background: var(--brass-500);
+  color: var(--forest-900);
+  border-color: var(--brass-500);
+}
+.btn-on-dark:hover { background: var(--brass-200); }
+
+.btn-ghost-on-dark {
+  background: transparent;
+  color: var(--paper);
+  border-color: rgba(241, 240, 231, 0.45);
+}
+.btn-ghost-on-dark:hover {
+  border-color: var(--paper);
+  background: rgba(241, 240, 231, 0.08);
+}
+
+.btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* ---- Icon sizing helper ---- */
+.icon { width: 22px; height: 22px; stroke: currentColor; fill: none; }

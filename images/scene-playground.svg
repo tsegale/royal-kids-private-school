@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="460" fill="#e7ede7"/>
+  <rect y="300" width="360" height="160" fill="#cfe0c8"/>
+  <!-- sun -->
+  <circle cx="300" cy="60" r="26" fill="none" stroke="#b08d3f" stroke-width="2"/>
+  <!-- climbing frame -->
+  <g stroke="#1f4734" stroke-width="5" stroke-linecap="round" fill="none">
+    <line x1="60" y1="220" x2="60" y2="320"/>
+    <line x1="160" y1="220" x2="160" y2="320"/>
+    <line x1="60" y1="220" x2="160" y2="220"/>
+    <line x1="80" y1="220" x2="80" y2="320"/>
+    <line x1="100" y1="220" x2="100" y2="320"/>
+    <line x1="120" y1="220" x2="120" y2="320"/>
+    <line x1="140" y1="220" x2="140" y2="320"/>
+  </g>
+  <!-- slide -->
+  <path d="M210 230 L210 300 L270 320" fill="none" stroke="#b08d3f" stroke-width="7" stroke-linecap="round"/>
+  <line x1="210" y1="230" x2="250" y2="230" stroke="#1f4734" stroke-width="5" stroke-linecap="round"/>
+  <line x1="250" y1="230" x2="250" y2="300" stroke="#1f4734" stroke-width="5" stroke-linecap="round"/>
+  <!-- trees -->
+  <circle cx="40" cy="200" r="36" fill="#1f4734" opacity="0.85"/>
+  <rect x="34" y="232" width="12" height="30" fill="#5c4118"/>
+  <circle cx="320" cy="220" r="30" fill="#2a5942" opacity="0.85"/>
+  <rect x="314" y="246" width="10" height="26" fill="#5c4118"/>
+  <!-- running children, simple geometric figures in motion poses -->
+  <g fill="#5c2230">
+    <circle cx="120" cy="360" r="12"/>
+    <rect x="106" y="372" width="28" height="36" rx="7"/>
+  </g>
+  <g fill="#7a3242">
+    <circle cx="190" cy="370" r="11"/>
+    <rect x="177" y="381" width="26" height="32" rx="7"/>
+  </g>
+  <g fill="#1f4734">
+    <circle cx="250" cy="365" r="12"/>
+    <rect x="236" y="377" width="28" height="35" rx="7"/>
+  </g>
+  <!-- ball -->
+  <circle cx="160" cy="410" r="9" fill="none" stroke="#b08d3f" stroke-width="2.4"/>
+</svg>
