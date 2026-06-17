@@ -130,6 +130,20 @@
   margin-top: 10px;
 }
 
+.prose-photo {
+  border: 1px solid var(--line-deep);
+  overflow: hidden;
+  aspect-ratio: 3/2;
+  margin: 8px 0 32px;
+}
+
+.prose-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 /* ---- Sidebar card ---- */
 .side-card {
   background: var(--paper-raised);
