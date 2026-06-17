@@ -18,4 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  // Hero slideshow
+  var slides = document.querySelectorAll(".hero-slide");
+  var indicators = document.querySelectorAll(".hero-indicator");
+  if (slides.length > 1) {
+    var current = 0;
+    function goTo(n) {
+      slides[current].classList.remove("is-active");
+      indicators[current].classList.remove("is-active");
+      current = n % slides.length;
+      slides[current].classList.add("is-active");
+      indicators[current].classList.add("is-active");
+    }
+    setInterval(function () { goTo(current + 1); }, 5000);
+    indicators.forEach(function (btn, i) {
+      btn.addEventListener("click", function () { goTo(i); });
+    });
+  }
 });

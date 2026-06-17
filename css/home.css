@@ -1,24 +1,79 @@
 /* ============================================================
    HOME — HERO
-   Asymmetric layout: copy + crest on the left, a framed
-   photo composition on the right, like a prospectus cover.
+   Full-bleed photo slideshow behind a solid copy panel.
    ============================================================ */
 
 .hero {
-  background: var(--paper);
-  padding: 56px 0 0;
+  position: relative;
   overflow: hidden;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
 }
 
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.hero-slide.is-active { opacity: 1; }
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-indicators {
+  position: absolute;
+  bottom: 22px;
+  right: 28px;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-indicator {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 1px solid rgba(241, 240, 231, 0.7);
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hero-indicator.is-active { background: var(--paper); }
+
 .hero .container {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 0.92fr;
   gap: 56px;
   align-items: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 @media (max-width: 980px) {
-  .hero .container { grid-template-columns: 1fr; gap: 40px; }
+  .hero { min-height: auto; }
+  .hero .container { grid-template-columns: 1fr; gap: 0; padding-top: 40px; padding-bottom: 40px; }
+}
+
+.hero-copy {
+  background: var(--paper);
+  padding: 44px 48px;
+  border: 1px solid var(--line);
 }
 
 .hero-copy .eyebrow { margin-bottom: 22px; }
@@ -69,50 +124,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-500);
-}
-
-.hero-visual {
-  position: relative;
-}
-
-.hero-frame {
-  border: 1px solid var(--line-deep);
-  padding: 14px;
-  background: var(--paper-raised);
-  box-shadow: var(--shadow-card);
-}
-
-.hero-frame-inner {
-  border: 1px solid var(--forest-700);
-  overflow: hidden;
-  aspect-ratio: 4 / 4.6;
-}
-
-.hero-frame-inner img { width: 100%; height: 100%; display: block; object-fit: cover; }
-
-.hero-caption {
-  position: absolute;
-  left: -22px;
-  bottom: 34px;
-  background: var(--forest-900);
-  color: var(--paper);
-  padding: 16px 20px;
-  max-width: 230px;
-  font-size: 13px;
-  line-height: 1.55;
-  box-shadow: var(--shadow-card);
-}
-
-.hero-caption strong {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 14.5px;
-  color: var(--brass-200);
-  margin-bottom: 4px;
-}
-
-@media (max-width: 560px) {
-  .hero-caption { left: 0; bottom: -20px; }
 }
 
 /* ============================================================
