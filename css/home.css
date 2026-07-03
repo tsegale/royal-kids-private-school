@@ -1,6 +1,7 @@
 /* ============================================================
    HOME — HERO
-   Full-bleed photo slideshow behind a solid copy panel.
+   Full-bleed photo slideshow with a flat maroon tint, copy sits
+   directly on the photo (no solid card) so the photos stay visible.
    ============================================================ */
 
 .hero {
@@ -9,6 +10,15 @@
   min-height: 580px;
   display: flex;
   align-items: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(61, 13, 20, 0.6);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-slideshow {
@@ -56,7 +66,7 @@
 
 .hero .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr 0.92fr;
   gap: 56px;
@@ -71,28 +81,30 @@
 }
 
 .hero-copy {
-  background: var(--paper);
-  padding: 44px 48px;
-  border: 1px solid var(--line);
+  background: transparent;
+  padding: 44px 0;
 }
 
-.hero-copy .eyebrow { margin-bottom: 22px; }
+.hero-copy .eyebrow { color: var(--brass-200); margin-bottom: 22px; }
+.hero-copy .eyebrow::before { background: var(--brass-200); }
 
 .hero-copy h1 {
+  color: var(--paper);
   font-size: clamp(36px, 4.6vw, 58px);
   line-height: 1.06;
   margin-bottom: 22px;
+  text-shadow: 0 2px 10px rgba(27, 12, 8, 0.35);
 }
 
 .hero-copy h1 em {
   font-style: italic;
-  color: var(--brass-700);
+  color: var(--brass-200);
 }
 
 .hero-copy p.lede {
   font-size: 18px;
   line-height: 1.65;
-  color: var(--ink-700);
+  color: rgba(241, 240, 231, 0.88);
   max-width: 480px;
   margin-bottom: 34px;
 }
@@ -109,21 +121,21 @@
   gap: 30px;
   flex-wrap: wrap;
   padding-top: 26px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(241, 240, 231, 0.25);
 }
 
 .hero-meta-item strong {
   display: block;
   font-family: var(--font-display);
   font-size: 24px;
-  color: var(--forest-900);
+  color: var(--paper);
 }
 
 .hero-meta-item span {
   font-size: 12.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-500);
+  color: rgba(241, 240, 231, 0.62);
 }
 
 /* ============================================================
