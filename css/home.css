@@ -1,7 +1,7 @@
 /* ============================================================
    HOME — HERO
-   Full-bleed photo slideshow with a flat maroon tint, copy sits
-   directly on the photo (no solid card) so the photos stay visible.
+   Full-bleed photo slideshow, photos shown as-is (no color tint).
+   Copy sits directly on the photo (no solid card).
    ============================================================ */
 
 .hero {
@@ -10,15 +10,6 @@
   min-height: 580px;
   display: flex;
   align-items: center;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(61, 13, 20, 0.6);
-  z-index: 1;
-  pointer-events: none;
 }
 
 .hero-slideshow {
